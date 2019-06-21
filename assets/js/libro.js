@@ -1,4 +1,16 @@
 window.addEventListener('load',recargar);
+window.addEventListener('load',reniciar_btn);
+document.getElementById('btn_reset').addEventListener('click', reniciar_btn);
+
+function reniciar_btn()
+{
+        document.getElementById('btn_edit').style.display = 'none'; // hide
+        document.getElementById('btn_create').style.display = 'inline'; // show
+}
+function btn_edit() {
+        document.getElementById('btn_create').style.display = 'none'; // hide
+        document.getElementById('btn_edit').style.display = 'inline'; // show
+}
 
 //metodo recargar
 function recargar() {
@@ -63,6 +75,8 @@ function accion() {
 //Mostarlos datos en la vista todos registos en la vista
 var id;
 function seleccion(elemento){
+    btn_edit();
+
     //Obtner un fila de la tabla
     tr = elemento.parentNode.parentNode;
     td = tr.getElementsByTagName("td");

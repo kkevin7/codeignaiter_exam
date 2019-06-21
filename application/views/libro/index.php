@@ -39,10 +39,10 @@
             <!--Botones que realizan las acciones en la tabla-->
             <button type="button" id="btn_create" class="btn btn-primary">Crear</button>
             <button type="button" id="btn_edit" class="btn btn-success ">Modificar</button>
-            <button type="reset" class="btn btn-secondary">Cancelar</button>
+            <button type="reset" id="btn_reset" class="btn btn-secondary">Cancelar</button>
         </form>
     </div>
-    <!--Contenedor deñ contenido el la tabla -->
+    <!--Contenedor del contenido el la tabla -->
     <div class="row contenedor-table">
         <h2>Lista de Libros Disponibles</h2>
         <!-- Tabla de los libros-->
